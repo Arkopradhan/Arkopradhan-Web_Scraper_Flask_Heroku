@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Webscrap</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <table class="table">
+        <tr>
+            <td>
+                <p class="heading">SEARCH</p>
+                <div class="form">
+                    <form action="/" method="POST">
+                        <label for="search"></label> <br> <br>
+                        <input type="text" name="content" class="search" id="content"
+                            placeholder="Your search goes here">
+                        <label for="btn"></label> <br> <br>
+                        <input type="submit" value="search" class="raise">
+                    </form>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

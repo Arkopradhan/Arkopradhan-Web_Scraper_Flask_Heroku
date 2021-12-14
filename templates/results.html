@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Webscrap</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+      <link rel="stylesheet" href="./results.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results.css') }}">
+
+
+</head>
+
+<body>
+
+  <h1 class="heading">RESULTS</h1>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">rating</th>
+              <th scope="col">Comment Heading</th>
+              <th scope="col">Comment</th>
+            </tr>
+        </thead>
+        {% for review in reviews %}
+      <tr>
+          
+         <td>{{review['Name']}}</td>
+         <td>{{review['Rating']}}</td>
+         <td>{{review['CommentHead']}}</td>
+         <td>{{review['Comment']}} </td>
+        {% endfor %}
+   </table>
+</div>
+
+
+
+</body>
+
+</html>

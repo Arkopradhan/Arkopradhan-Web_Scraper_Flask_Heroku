@@ -1,0 +1,48 @@
+body{
+  background-image: url(./bg-image_1.jpg);
+}
+.heading{
+  font-size: 35px;
+  font-family: Cambria;
+  text-align: center;
+  color: chartreuse;
+}
+.table{
+  margin-top: 14em;
+  border: 10px solid #F8C471;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 350px;
+  height: 300px;
+  border-radius: 25px;
+  display: flex;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.search{
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+  margin-left: 30px;  
+  color: red;
+  font-size: 20px;
+}
+
+.raise {
+  width: 175px;
+  height: 45px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  font-family: Arial;
+  font-size: 25px;
+  margin-left: 70px;
+}
+
+.raise:hover,
+.raise:focus {
+box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+transform: translateY(-0.25em);
+}

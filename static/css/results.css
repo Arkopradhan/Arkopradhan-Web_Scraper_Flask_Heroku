@@ -1,0 +1,25 @@
+body{
+    background-image: url("./bg-image_1.jpg");
+}
+
+.table{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    text-align: center;
+    height: 150px;
+    border: 10px solid rgba(124, 189, 28, 0.822);
+    margin-top: 100px;
+    border-radius: 25px;
+    color: azure;
+}
+
+html{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 50px;
+    color: yellow;
+}
